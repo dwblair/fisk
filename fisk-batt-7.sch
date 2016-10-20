@@ -6242,7 +6242,7 @@ JST PH 2-pin thru-home side entry</description>
 <part name="C4" library="LowPowerLab" deviceset="CAP" device="0603-CAP" value="0.1"/>
 <part name="C2" library="LowPowerLab" deviceset="CAP" device="0603-CAP" value="1u"/>
 <part name="C3" library="LowPowerLab" deviceset="CAP" device="0805-CAP" value="10u"/>
-<part name="U$2" library="LowPowerLab" deviceset="LED" device="0603"/>
+<part name="D1" library="LowPowerLab" deviceset="LED" device="0603"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="R2" library="LowPowerLab" deviceset="RESISTOR" device="0603-RES" value="1k5"/>
 <part name="C7" library="LowPowerLab" deviceset="CAP" device="0603-CAP" value="0.47uF"/>
@@ -6311,7 +6311,7 @@ alternative power source (VGEN1)</text>
 <instance part="C4" gate="G$1" x="358.14" y="91.44"/>
 <instance part="C2" gate="G$1" x="408.94" y="91.44"/>
 <instance part="C3" gate="G$1" x="365.76" y="91.44"/>
-<instance part="U$2" gate="G$1" x="102.87" y="73.66" smashed="yes" rot="R90"/>
+<instance part="D1" gate="G$1" x="102.87" y="73.66" smashed="yes" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="102.87" y="66.04"/>
 <instance part="R2" gate="G$1" x="102.87" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="109.22" y="87.122" size="1.778" layer="96" rot="R180"/>
@@ -6413,7 +6413,7 @@ alternative power source (VGEN1)</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="MINUS"/>
+<pinref part="D1" gate="G$1" pin="MINUS"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="102.87" y1="68.58" x2="102.87" y2="71.12" width="0.1524" layer="91"/>
 </segment>
@@ -6793,7 +6793,7 @@ alternative power source (VGEN1)</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="PLUS"/>
+<pinref part="D1" gate="G$1" pin="PLUS"/>
 <wire x1="102.87" y1="81.28" x2="102.87" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6923,13 +6923,13 @@ alternative power source (VGEN1)</text>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="388.62" y1="124.46" x2="408.94" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="124.46" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
 <label x="406.4" y="127" size="1.778" layer="95"/>
 <wire x1="401.32" y1="96.52" x2="408.94" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="VI"/>
 <label x="402.59" y="96.52" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="124.46" x2="408.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="109.22" x2="408.94" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J10" gate="J$1" pin="2"/>
 <junction x="408.94" y="96.52"/>
 </segment>
